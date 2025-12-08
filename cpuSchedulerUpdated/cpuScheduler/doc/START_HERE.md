@@ -1,28 +1,14 @@
-# 🚀 START HERE - CPU Scheduler Simulator
+# START HERE - CPU Scheduler Simulator
 
-Welcome to the **easiest and most complete** Operating Systems project!
-
-## ⚡ Quick Navigation
-
-### 📋 New to this project?
-**Read these in order:**
-
-1. **[PROJECT_DELIVERABLES.md](PROJECT_DELIVERABLES.md)** ⭐ START HERE FIRST
-   - Why this is the easiest project
-   - Complete overview of what you're getting
-   - All requirements checklist
-
-2. **[GETTING_STARTED.md](GETTING_STARTED.md)** 
+1. **[GETTING_STARTED.md](GETTING_STARTED.md)** 
    - Step-by-step setup instructions
    - Quick start guide
    - Troubleshooting
 
-3. **[README.md](README.md)**
+2. **[README.md](README.md)**
    - Complete project documentation
    - Algorithm descriptions
    - Usage examples
-
-### 🔨 Ready to build?
 
 ```bash
 # Three commands to get started:
@@ -31,7 +17,7 @@ make build          # Compile the project
 make test          # Run all tests
 ```
 
-### 📚 Want to understand the code?
+### Want to understand the code?
 
 1. **[PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)**
    - High-level architecture
@@ -48,13 +34,13 @@ make test          # Run all tests
    - Development process
    - Lessons learned
 
-### 🧪 Testing and Verification
+### Testing and Verification
 
 - **[test/test_scheduler.cpp](test/test_scheduler.cpp)** - Complete test suite
 - Run: `make test`
 - 16+ comprehensive test cases included
 
-### 📖 Complete File Structure
+### Complete File Structure
 
 ```
 cpu-scheduler-simulator/
@@ -94,16 +80,16 @@ cpu-scheduler-simulator/
 └── LICENSE                          ← (add your license)
 ```
 
-## 🎯 What You Get
+## What You Get
 
-### ✅ Complete Implementation
+### Complete Implementation
 - 4 scheduling algorithms (5 variants)
 - 1,530 lines of source code
 - 620 lines of header files
 - 500 lines of tests
 - Professional quality code
 
-### ✅ Comprehensive Documentation
+### Comprehensive Documentation
 - 2,500+ lines of documentation
 - Multiple guides for different purposes
 - Every function documented
