@@ -169,7 +169,7 @@ void compareAll() {
     std::vector<std::shared_ptr<Scheduler>> schedulers;
     
     // 1. Round Robin (quantum = 3)
-    auto rr = std::make_shared<RoundRobinScheduler>(3, 0);
+    auto rr = std::make_shared<RoundRobinScheduler>(6, 0);
     for (const auto& p : testProcesses) {
         rr->addProcess(std::make_shared<Process>(*p));
     }
@@ -183,7 +183,7 @@ void compareAll() {
     schedulers.push_back(npp);
     
     // 3. Preemptive Priority
-    auto pp = std::make_shared<PriorityScheduler>(true, true, 5, 0);
+    auto pp = std::make_shared<PriorityScheduler>(true, true, 7, 0);
     for (const auto& p : testProcesses) {
         pp->addProcess(std::make_shared<Process>(*p));
     }
@@ -228,7 +228,7 @@ void compareAll() {
     
     for (const auto& scheduler : schedulers) {
         SchedulingMetrics metrics = scheduler->calculateMetrics();
-        std::cout << std::fixed << std::setprecision(2);
+        std::cout << std::fixed << std::setprecision(4);
         std::cout << std::left << std::setw(35) << scheduler->getName()
                   << std::setw(12) << metrics.averageWaitingTime
                   << std::setw(12) << metrics.averageTurnaroundTime
@@ -251,19 +251,19 @@ int main() {
             case 1:
                 runRoundRobin();
                 break;
-            case 2:
+            case 4:
                 runPriority(false);
                 break;
-            case 3:
+            case 6:
                 runPriority(true);
                 break;
-            case 4:
+            case 8:
                 runMultilevelQueue();
                 break;
-            case 5:
+            case 7:
                 runMLFQ();
                 break;
-            case 6:
+            case 8:
                 compareAll();
                 break;
             case 0:
