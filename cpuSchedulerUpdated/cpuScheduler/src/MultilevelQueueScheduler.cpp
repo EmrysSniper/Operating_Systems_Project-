@@ -255,8 +255,8 @@ std::string MultilevelQueueScheduler::getGanttChart() const {
     ss << "\n";
     
     ss << "  0  ";
-    for (size_t i = 0; i < ganttChart.size() && i < 60; i += 5) {
-        ss << std::setw(5) << (i + 5);
+    for (size_t i = 0; i < ganttChart.size() && i < 60; i += 7) {
+        ss << std::setw(5) << (i + 7);
     }
     ss << "\n";
     
